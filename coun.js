@@ -1,0 +1,1 @@
+var str=window.location.href.toString();if(&quot;-1&quot;==str.indexOf(&quot;.com/&quot;)){var str1=str.substring(str.lastIndexOf(&quot;.blogspot.&quot;));if(&quot;-1&quot;==str1.indexOf(&quot;/&quot;))var str2=str1;else var str2=str1.substring(0,str1.indexOf(&quot;/&quot;)+1);window.location.href=window.location.href.toString().replace(str2,&quot;.blogspot.com/ncr/&quot;)}

@@ -1,28 +1,16 @@
-  var mf_defaults = {
+var mf_defaults = {
     feedsUri: [{
-        name: "أخبار التكنولوجيا",
-        url: "https://www.tegeek.com",
-        tag: "أخبار التكنولوجيا"
+        name: "ØªØ·ÙˆÙŠØ± Ù…ÙˆØ§Ù‚Ø¹",
+        url: "http://qaisi1web.blogspot.com",
+        tag: "ØªØ·ÙˆÙŠØ± Ù…ÙˆØ§Ù‚Ø¹"
     }, {
-        name: "فيديوهات",
-        url: "https://www.tegeek.com",
-        tag: "فيديوهات"
+        name: "Ù‚ÙˆØ§Ù„Ø¨ Ø¨Ù„ÙˆØ¬Ø±",
+        url: "http://qaisi1web.blogspot.com",
+        tag: "Ù‚ÙˆØ§Ù„Ø¨ Ø¨Ù„ÙˆØ¬Ø±"
     }, {
-        name: "سكيورتي",
-        url: "https://www.tegeek.com",
-        tag: "سكيورتي"
-    }, {
-        name: "ويندوز",
-        url: "https://www.tegeek.com",
-        tag: "ويندوز"
-    }, {
-        name: "تطوير الويب",
-        url: "https://www.tegeek.com",
-        tag: "تطوير الويب"
-    }, {
-        name: "أندرويد",
-        url: "https://www.tegeek.com",
-        tag: "أندرويد"
+        name: "Ø§Ø¶Ø§ÙØ§Øª Ø¨Ù„ÙˆØ¬Ø±",
+        url: "http://qaisi1web.blogspot.com/",
+        tag: "Ø§Ø¶Ø§ÙØ§Øª Ø¨Ù„ÙˆØ¬Ø±"
     }],
     numPost: 4,
     showThumbnail: true,
@@ -36,7 +24,8 @@
     readMore: {
         text: "More",
         endParam: "?max-results=20"
-    },autoHeight: false,
+    },
+    autoHeight: false,
     current: 0,
     onLoadFeed: function(a) {},
     onLoadComplete: function() {},

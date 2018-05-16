@@ -1,4 +1,42 @@
-    autoHeight: false,
+  var mf_defaults = {
+    feedsUri: [{
+        name: "أخبار التكنولوجيا",
+        url: "https://www.tegeek.com",
+        tag: "أخبار التكنولوجيا"
+    }, {
+        name: "فيديوهات",
+        url: "https://www.tegeek.com",
+        tag: "فيديوهات"
+    }, {
+        name: "سكيورتي",
+        url: "https://www.tegeek.com",
+        tag: "سكيورتي"
+    }, {
+        name: "ويندوز",
+        url: "https://www.tegeek.com",
+        tag: "ويندوز"
+    }, {
+        name: "تطوير الويب",
+        url: "https://www.tegeek.com",
+        tag: "تطوير الويب"
+    }, {
+        name: "أندرويد",
+        url: "https://www.tegeek.com",
+        tag: "أندرويد"
+    }],
+    numPost: 4,
+    showThumbnail: true,
+    showSummary: true,
+    summaryLength: 80,
+    titleLength: "auto",
+    thumbSize: 72,
+    newTabLink: false,
+    containerId: "feed-list-container",
+    listClass: "list-entries",
+    readMore: {
+        text: "More",
+        endParam: "?max-results=20"
+    },autoHeight: false,
     current: 0,
     onLoadFeed: function(a) {},
     onLoadComplete: function() {},

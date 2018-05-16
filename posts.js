@@ -57,7 +57,7 @@ function listEntries(q) {
         n = (c.titleLength !== "auto") ? p[f].title.$t.substring(0, c.titleLength) + (c.titleLength < p[f].title.$t.length ? "&hellip;" : "") : p[f].title.$t;
         m = ("summary" in p[f]) ? p[f].summary.$t.replace(/<br ?\/?>/g, " ").replace(/<.*?>/g, "").replace(/[<>]/g, "") : "";
         m = (c.summaryLength < m.length) ? m.substring(0, c.summaryLength) + "&hellip;" : m;
-        g = ("media$thumbnail" in p[f]) ? '<img src="' + p[f].media$thumbnail.url.replace(/\/s72(\-c)?\//, "/s" + c.thumbSize + "-c/") + '" style="width:'250 "px;height:" 150 'px;" width="72" height="72">' : '<span class="fake-img" style="width:250"px;height:"150'px;"></span>';
+        g = ("media$thumbnail" in p[f]) ? '<img src="' + p[f].media$thumbnail.url.replace(/\/s72(\-c)?\//, "/s" + c.thumbSize + "-c/") + '" style="width:250px;height:150px;" width="72" height="72">' : '<span class="fake-img" style="width:250px;height:150px;"></span>';
         for (var e = 0, b = p[f].link.length; e < b; e++) {
             k = (p[f].link[e].rel == "alternate") ? p[f].link[e].href : "#"
         }

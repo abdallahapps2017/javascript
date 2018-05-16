@@ -61,7 +61,7 @@ function listEntries(q) {
         for (var e = 0, b = p[f].link.length; e < b; e++) {
             k = (p[f].link[e].rel == "alternate") ? p[f].link[e].href : "#"
         }
-        d += '<li><div width="72" height="350" class="inner"' + (!c.autoHeight ? ' style="height:' + c.thumbSize + 'px;overflow:hidden;"' : "") + ">";
+        d += '<li><div width="72" height="350" class="inner"' + (!c.autoHeight ? ' style="height:250px;overflow:hidden;"' : "") + ">";
         d += (c.showThumbnail) ? g : "";
         d += '<div class="title"><a href="' + k + '"' + (c.newTabLink ? ' target="_blank"' : "") + ">" + n + "</a></div>";
         d += '<div class="summary">';

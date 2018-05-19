@@ -70,8 +70,8 @@ function listEntries(q) {
         d += "</span></div>";
         d += '<span style="display:block;clear:both;"></span></div></li>'
     }
-    d += "</ul>";
     d += '<div class="more-link"><a href="' + c.feedsUri[c.current].url.replace(/\/$/, "") + "/search/label/" + c.feedsUri[c.current].tag + c.readMore.endParam + '"' + (c.newTabLink ? ' target="_blank"' : "") + ">" + c.readMore.text + "</a></div>";
+    d += "</ul>";
     a.className = c.listClass;
     a.innerHTML = '<div class="main-title"><h4>' + c.feedsUri[c.current].name + "</h4></div>" + d;
     h.appendChild(a);

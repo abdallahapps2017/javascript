@@ -48,6 +48,7 @@ function listEntries(q) {
         h = document.getElementById(c.containerId),
         a = document.createElement("div"),
         d = "<ul>",
+            d += '<div class="more-link"><a href="' + c.feedsUri[c.current].url.replace(/\/$/, "") + "/search/label/" + c.feedsUri[c.current].tag + c.readMore.endParam + '"' + (c.newTabLink ? ' target="_blank"' : "") + ">" + c.readMore.text + "</a></div>";
         l = c.feedsUri.length,
         n, k, m, g;
     for (var f = 0; f < c.numPost; f++) {
@@ -66,7 +67,6 @@ function listEntries(q) {
         d += '<div class="title"><a href="' + k + '"' + (c.newTabLink ? ' target="_blank"' : "") + ">" + n + "</a></div>";
         d += '<span style="display:block;clear:both;"></span></div></li>'
     }
-    d += '<div class="more-link"><a href="' + c.feedsUri[c.current].url.replace(/\/$/, "") + "/search/label/" + c.feedsUri[c.current].tag + c.readMore.endParam + '"' + (c.newTabLink ? ' target="_blank"' : "") + ">" + c.readMore.text + "</a></div>";
     d += "</ul>";
     a.className = c.listClass;
     a.innerHTML = '<div class="main-title"><h4>' + c.feedsUri[c.current].name + "</h4></div>" + d;

@@ -47,8 +47,8 @@ function listEntries(q) {
         c = mf_defaults,
         h = document.getElementById(c.containerId),
         a = document.createElement("div"),
-                   d += '<div class="more-link"><a href="' + c.feedsUri[c.current].url.replace(/\/$/, "") + "/search/label/" + c.feedsUri[c.current].tag + c.readMore.endParam + '"' + (c.newTabLink ? ' target="_blank"' : "") + ">" + c.readMore.text + "</a></div>";,
         d = "<ul>",
+        d += '<div class="more-link"><a href="' + c.feedsUri[c.current].url.replace(/\/$/, "") + "/search/label/" + c.feedsUri[c.current].tag + c.readMore.endParam + '"' + (c.newTabLink ? ' target="_blank"' : "") + ">" + c.readMore.text + "</a></div>";
         l = c.feedsUri.length,
         n, k, m, g;
     for (var f = 0; f < c.numPost; f++) {

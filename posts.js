@@ -64,10 +64,6 @@ function listEntries(q) {
         d += '<li><div width="72" height="350" class="inner"' + (!c.autoHeight ? ' style="height:250px;overflow:hidden;"' : "") + ">";
         d += (c.showThumbnail) ? g : "";
         d += '<div class="title"><a href="' + k + '"' + (c.newTabLink ? ' target="_blank"' : "") + ">" + n + "</a></div>";
-        d += '<div class="summary">';
-        d += "<span" + (!c.showSummary ? ' style="display:none;"' : "") + ">";
-        d += (c.showSummary) ? m : "";
-        d += "</span></div>";
         d += '<span style="display:block;clear:both;"></span></div></li>'
     }
     d += '<div class="more-link"><a href="' + c.feedsUri[c.current].url.replace(/\/$/, "") + "/search/label/" + c.feedsUri[c.current].tag + c.readMore.endParam + '"' + (c.newTabLink ? ' target="_blank"' : "") + ">" + c.readMore.text + "</a></div>";

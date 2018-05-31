@@ -68,6 +68,7 @@ function listEntries(q) {
     }
     d += "</ul>";
     a.className = c.listClass;
+    d += '<div class="more-link"><a href="' + c.feedsUri[c.current].url.replace(/\/$/, "") + "/search/label/" + c.feedsUri[c.current].tag + c.readMore.endParam + '"' + (c.newTabLink ? ' target="_blank"' : "") + ">" + c.readMore.text + "</a></div>";
     a.innerHTML = '<div class="main-title"><h4>' + c.feedsUri[c.current].name + "</h4></div>" + d;
     d += '<div class="more-link"><a href="' + c.feedsUri[c.current].url.replace(/\/$/, "") + "/search/label/" + c.feedsUri[c.current].tag + c.readMore.endParam + '"' + (c.newTabLink ? ' target="_blank"' : "") + ">" + c.readMore.text + "</a></div>";
     h.appendChild(a);

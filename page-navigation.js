@@ -1,6 +1,6 @@
   /*<![CDATA[*/
-    if (typeof firstText == "undefined") firstText = "التالي"; 
-    if (typeof lastText == "undefined") lastText = "السابق";
+    if (typeof firstText == "undefined") firstText = "السابق"; 
+    if (typeof lastText == "undefined") lastText = "التالي";
     var noPage;
     var currentPage;
     var currentPageNo;
